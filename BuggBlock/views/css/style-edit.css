@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+/* 
+ 1) font-family: 'Rajdhani', sans-serif;
+ 2) font-family: 'Poppins', sans-serif;
+*/
+
+
+/*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
+
+@import url(animate.min.css);
+@import url(normalize.css);
+@import url(meanmenu.css);
+@import url(owl.carousel.min.css);
+@import url(slick.css);
+@import url(jquery-ui.css);
+@import url(nice-select.css);
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+
+* {
+     box-sizing: border-box !important;
+     transition: ease all 0.5s;
+}
+
+html {
+     scroll-behavior: smooth;
+}
+
+body {
+	 background-image: url(../images/Background.png);
+	 color: #000000;
+	 font-size: 14px;
+	 font-family: 'Raleway', sans-serif;
+	 line-height: 1.80857;
+	 font-weight: normal;
+	 overflow-x: hidden;
+}
+
+a {
+     color: #000000;
+     text-decoration: none !important;
+     outline: none !important;
+     -webkit-transition: all .3s ease-in-out;
+     -moz-transition: all .3s ease-in-out;
+     -ms-transition: all .3s ease-in-out;
+     -o-transition: all .3s ease-in-out;
+     transition: all .3s ease-in-out;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+     letter-spacing: 0;
+     font-weight: normal;
+     position: relative;
+     padding: 0 0 10px 0;
+     font-weight: normal;
+     line-height: normal;
+     color: #000000;
+     margin: 0
+}
+h1 {
+	color: #cacaca;
+     font-size: 24px
+}
+h2 {
+     font-size: 22px
+}
+h3 {
+     font-size: 18px
+}
+h4 {
+     font-size: 16px
+}
+h5 {
+     font-size: 14px
+}
+h6 {
+     font-size: 13px
+}
+
+*,
+*::after,
+*::before {
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+     color: #000000;
+     text-decoration: none!important;
+     opacity: 1
+}
+
+button:focus {
+     outline: none;
+}
+
+ul,
+li,
+ol {
+     margin: 0px;
+     padding: 0px;
+     list-style: none;
+}
+
+p {
+     margin: 20px;
+     font-weight: 400;
+     font-size: 15px;
+     line-height: 24px;
+}
+
+a {
+     color: #000000;
+     text-decoration: none;
+     outline: none !important;
+}
+
+/****** Encabezado donde esta la imagen y el logo *******/
+
+.header_main{ 
+	width: 100%;
+    float: left;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 40px; 
+}
+.logo{
+	width: 100%;
+	float: left;
+	text-align: center;
+}
+
+/****************************************************************/
+
+/***************  Barra donde estan los botones de LOGIN y HOME  ****************/
+
+.header{ 
+	clear: both;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.837);
+	border-radius: 25px;
+	margin: auto;
+	width: 80%;
+}
+
+.one-banner-main{ 
+	width: 100%;
+	float: left;
+	background-image: url(../images/BannerIni.jpg);
+	height: auto; 
+}
+
+.banner-main{ 
+	width: 100%;
+	float: left;
+	height: auto; 
+}
+
+.last{
+	padding-top: 10px;
+	padding-left: 40px;
+}
+
+.titlepage-h1{
+	width: 100%;
+	float: left;
+	margin: 0 auto;
+	text-align: center;	
+}
+
+/*Barra de Herramientas (inicio, login, admi, ect)*/
+.navbar-expand-lg .navbar-nav .nav-link {
+	padding-right: 85px;
+    padding-left: 30px;
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    letter-spacing: 1px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.navbar-nav.mr-auto {
+    width: 100%;
+    margin: 0;
+    display: block;
+}
+
+.navbar-nav.mr-auto li {
+    float: left;
+}
+
+.navbar-nav.mr-auto li.last {
+    float: right;
+}
+
+.services_main{
+	width: 100%;
+	background-image: url(../images/Background.png);
+	float: left;
+	height: auto;
+	padding-bottom: 30px;
+	padding-top: 30px;
+}
+
+/*Caracteristicas del contenedor de informacion*/
+.creative_taital{
+	width: 100%;
+	float: left;
+	border-radius: 20px;
+	background-color: rgba(255, 255, 255, 0.619);
+	height: auto;
+	padding-bottom: 30px;
+	padding-top: 30px;
+	box-shadow: 0px 0px 10px 0px;
+	color: #000000;
+	margin-top: -110px;
+	margin-bottom: 50px;
+	border-radius: 20px;
+}
+
+/*Contenedor de informacion*/
+.creative_text{
+	color: #000000; /*Color del texto*/
+	font-size: 22pt;
+	text-align: center;	
+	border-bottom: 2px solid rgb(0, 0, 0);
+	width: 46%;
+    margin: 0 auto;
+    text-align: center;
+	font-weight: bold;
+
+}
+
+.service_text{
+	color: #ffffff;
+	font-size: 22pt;
+	text-align: center;	
+	border-bottom: 1px solid rgb(255, 255, 255);
+	width: 22%;
+    margin: 0 auto;
+	font-weight: bold;
+}
+
+/*Seccion del pie de pagina*/
+.quote_section{
+	width: 100%;
+	float: left;
+    border: none;
+	height: auto;
+	padding: 50px;
+	font-weight: bold;
+}
+
+.quote_text{
+	color: #ffffff;
+	width: 100%;
+	float: left;
+}
+
+.loan_text{
+	color: #ffffff;
+	width: 100%;
+	float: left;
+	margin: 0px;
+
+}
+
+.input_main{
+	width: 100%;
+	float: left;
+	background-color: #ffffff;
+    padding: 40px 20px;
+}
+
+/** arrow css **/
+
+#main_slider a.carousel-control-prev {
+    position: absolute;
+    left: 82px;
+    bottom: 10px;
+    top: inherit;
+}
+
+#main_slider a.carousel-control-prev {
+    position: absolute;
+    top: 40% !important;
+    left: 17px !important;
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+}
+
+table {
+    margin: 0 auto; /* Centra la tabla en la página */
+    border-collapse: separate; /* Agrega espacio entre las celdas */
+    border-spacing: 10px; /* Controla el espacio entre las celdas */
+  }
+
+
+
+
+  /* Button used to open the contact form - fixed at the bottom of the page */
+  .open-button {
+	background-color:rgba(255, 255, 255, 0.619);
+	color: white;
+	/* Boton de crear publicacion */
+	padding: 16px 20px;
+	border: none;
+	cursor: pointer;
+	opacity: 0.8;
+	position: fixed;
+	bottom: 100px;
+	right: 100px;
+	width: 300px;
+  }
+  
+  /* The popup form - hidden by default */
+  .form-popup {
+	display: none;
+	position: fixed;
+	bottom: 0;
+	right: 100px;
+	border: 1px solid hsl(0, 0%, 48%);;
+	z-index: 9;
+  }
+ 
+  .form-container {
+	margin: 10px;
+	max-width: 1100px;
+	padding: 50px;
+	background-color: blur(10px);
+  }
+
+
+  /* Full-width input fields */
+  .form-container input[type=text], .form-container input[type=password] {
+	width: 70%;
+	padding: 3%;
+	margin: 5px 0 22px 0;
+	border: none;
+	border-radius: 25px;
+	background: rgba(150, 150, 150, 0.626);
+  }
+  
+  /* When the inputs get focus, do something */
+  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+	background-color: rgba(124, 124, 124, 0.619);
+	outline: none;
+	font-size: 17px;
+	border-radius: 7px;
+  }
+  
+  /* Set a style for the submit/login button */
+  .form-container .btn {
+	height: 50px;
+    width: 50%;
+	font-size: 17px;
+    font-weight: 500;
+	text-transform: capitalize;
+	font-family: 'Nunito', sans-serif; 	
+    cursor: pointer;
+    border-radius: 25px;
+	background-color: rgb(144, 2, 2);
+	color: white;
+	cursor: pointer;
+	margin-bottom: 10px;
+	opacity: 0.8;
+	border: none;
+  }
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+	background-color: #004c76;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+	opacity: 1;
+  }
+  
+  .button{
+	color:#04AA6D
+  }
+  
+  .button:hover {
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.719), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+  .button {
+	display: inline-block;
+	border-radius: 4px;
+	background-color: #0846556c;
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+  }
+  
+  .button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+  }
+  
+  .button span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+  }
+  
+  .button:hover span {
+	padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+	opacity: 1;
+	right: 0;
+  }

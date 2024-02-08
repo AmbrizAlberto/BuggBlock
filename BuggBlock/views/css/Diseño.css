@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2? family= Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;1,600 & display=swap');
+
+
+/************Colores Usados*************/
+:root{
+    --Fondo: rgb(21, 44, 66);
+    --Boton1: rgba(176, 10, 10, 0.5);
+    --Boton2: rgba(201, 201, 201, 0.5);
+    --Texto: hsl(0, 0%, 100%);
+    --Texto-suave: rgb(230, 230, 230);
+    --body-bg-color: hsl(200, 54%, 12%);
+    --glass: hsla(0, 0%, 100%, 0.327);
+    --Borde-linea: hsla(0, 0%, 100%, 0.403);
+    --blur: blur(10px);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: var(--Texto-suave);
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+img{
+    display: flex;
+    margin-top: -20%;
+    margin-left: 18%;
+}
+
+.form-main{
+    min-height: 100vh;
+    padding: 60px 150px;
+    display: flex;
+    margin-top: -3.5%;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-content{
+    width: 100%;
+    max-width: 450px;
+    position: center;
+    z-index: 0.8;
+}
+
+.form-content .box{
+    border-color: var(--glass);
+    border: 2px solid var(--Borde-linea);
+    padding: 30px 70px;
+    border-radius: 20px;
+    backdrop-filter: var(--blur);
+}
+
+.form-content .box{
+    padding: 30px 10px;
+    border-radius: 30px;
+    backdrop-filter: var(--blur)
+}
+
+.form-content h3{
+    font-size: 30px;
+    text-align: center;
+    line-height: 1.2;
+    color: var(--Texto);
+    font-weight: 500;
+}
+
+.form-content form{
+    margin: 25px 0 20px;
+}
+
+.form-content .input-box{
+    margin: 25px
+}
+
+.form-content ::placeholder{
+    color: inherit;
+    opacity: 25px;
+}
+
+.form-content .input-control{
+    display: block;
+    height: 45px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid var(--Borde-linea);
+    color: rgb(255, 255, 255);
+    font-weight: inherit;
+    font-family: inherit;
+    font-size: 17px;
+}
+
+.form-content .input-control:focus{
+    outline: none;
+}
+
+.form-content .input-link{
+    margin-top: 5%;
+    text-align: right;
+}
+
+.form-content .btn{
+    height: 50px;
+    width: 100%;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-family: inherit;
+    cursor: pointer;
+    border-radius: 25px;
+    user-select: none;
+    background: var(--Boton1);
+    border: none;
+    color: var(--Texto);
+    position: relative;
+    overflow: hidden;
+}
+.form-content .btn.btn1{
+    margin-top: 0%;
+    height: 50px;
+    width: 100%;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-family: inherit;
+    cursor: pointer;
+    border-radius: 25px;
+    user-select: none;
+    background: var(--Boton2);
+    border: none;
+    color: var(--Texto);
+    position: relative;
+    overflow: hidden;
+}
+
+
+/************************************************/
+/*----------------------------------------------*/
+/************************************************/
+
+
+/************Seccion del Fondo*************/
+section{
+    position: flex;
+    width: 100%;
+    height: 5vh;
+    background-image: url(../images/Background.png);
+    overflow: auto;
+}
+/************Parametros de las Ondas(Wave)*************/
+section .wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(../images/wave.png);
+    background-size: 1000px 100px;
+}
+section .wave.wave1{
+    animation: animate 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: -3s;
+    bottom: 10px;
+}
+section .wave.wave2{
+    animation: animate2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+section .wave.wave3{
+    animation: animate 30s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15px;
+}
+section .wave.wave4{
+    animation: animate2 5s linear infinite;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 20px;
+}
+/************Parametros de Animacion*************/
+@keyframes animate {
+    0%
+    {
+        background-position-x: 0;
+    }
+    100% 
+    {
+        background-position-x: 1000px;
+    }
+}
+@keyframes animate2 {
+    0% 
+    {
+        background-position-x: 0;
+    }
+    100% 
+    {
+        background-position-x: -1000px;
+    }
+}
+
+.errorMsg {
+    text-align: center;
+    color: white;
+    background-color: rgb(230, 83, 37, .405);
+    border-radius: 25px;
+    width: 70%;
+    margin: 20px auto 25px;
+    font-size: 25px;
+}
+
+.select-role{
+    font-family: verdana;
+    font-size: 15px;
+    color: white;
+    background-color: #666;
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+    width: 60%;
+    display: block;
+    margin: 25px auto 60px;
+}

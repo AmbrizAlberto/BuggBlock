@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+/*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
+
+@import url(animate.min.css);
+@import url(normalize.css);
+@import url(meanmenu.css);
+@import url(owl.carousel.min.css);
+@import url(slick.css);
+@import url(jquery-ui.css);
+@import url(nice-select.css);
+
+/*------------------------------------------------------------------------------------------------------------------------------------------*/
+
+* {
+     box-sizing: border-box !important;
+     transition: ease all 0.5s;
+}
+
+html {
+     scroll-behavior: smooth;
+}
+
+body {
+     background-image: url(../images/Background.png);
+     color: #000000;
+     font-size: 14px;
+     font-family: 'Raleway', sans-serif;;
+     line-height: 1.80857;
+     font-weight: normal;
+     overflow-x: hidden;
+}
+
+a {
+     color: #000000;
+     text-decoration: none !important;
+     outline: none !important;
+     -webkit-transition: all .3s ease-in-out;
+     -moz-transition: all .3s ease-in-out;
+     -ms-transition: all .3s ease-in-out;
+     -o-transition: all .3s ease-in-out;
+     transition: all .3s ease-in-out;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+     letter-spacing: 0;
+     font-weight: normal;
+     position: relative;
+     padding: 0 0 10px 0;
+     font-weight: normal;
+     line-height: normal;
+     color: #000000;
+     margin: 0
+}
+h1 {
+     font-size: 24px
+}
+h2 {
+     font-size: 22px
+}
+h3 {
+     font-size: 18px
+}
+h4 {
+     font-size: 16px
+}
+h5 {
+     font-size: 14px
+}
+h6 {
+     font-size: 13px
+}
+
+*,
+*::after,
+*::before {
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+     color: #000000;
+     text-decoration: none!important;
+     opacity: 1
+}
+
+button:focus {
+     outline: none;
+}
+
+ul,
+li,
+ol {
+     margin: 0px;
+     padding: 0px;
+     list-style: none;
+}
+
+p {
+     margin: 20px;
+     font-weight: 400;
+     font-size: 15px;
+     line-height: 24px;
+}
+
+a {
+     color: #ffffff;
+     text-decoration: none;
+     outline: none !important;
+}
+
+/****** Encabezado donde esta la imagen y el logo *******/
+
+.header_main{ 
+	width: 100%;
+    float: left;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 40px; 
+}
+.logo{
+	width: 100%;
+	float: left;
+	text-align: center;
+}
+
+/****************************************************************/
+
+/***************  Barra donde estan los botones de LOGIN y HOME  ****************/
+
+.header{ 
+	clear: both;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.837);
+	border-radius: 25px;
+	margin: auto;
+	width: 82%;
+}
+
+.header_main{
+	width: 100%;
+	float: left;
+	background-image:url(../images/Background.png);
+	height: auto;
+}
+
+.last{
+	padding-top: 10px;
+	padding-left: 40px;
+}
+
+.titlepage-h1{
+	width: 100%;
+	float: left;
+	margin: 0 auto;
+	text-align: center;	
+}
+
+/*Barra de Herramientas (inicio, login, admi, ect)*/
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 25px;
+    padding-left: 30px;
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    letter-spacing: 1px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.navbar-nav.mr-auto {
+    width: 100%;
+    margin: 0;
+    display: block;
+}
+
+.navbar-nav.mr-auto li {
+    float: left;
+}
+
+.navbar-nav.mr-auto li.last {
+    float: right;
+}
+
+.services_main{
+	width: 100%;
+	float: left;
+    background-image: url(../images/Background.png);
+	height: auto;
+	padding-bottom: 30px;
+	padding-top: 30px;
+}
+
+/*Caracteristicas del contenedor de informacion*/
+.creative_taital{
+	width: 100%;
+	float: left;
+	background-color: rgba(255, 255, 255, 0.619);
+	height: auto;
+	padding-bottom: 30px;
+	padding-top: 30px;
+    box-shadow: 0px 0px 10px 0px;
+    color:#000000;;
+    margin-top: -110px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+}
+
+
+/*Contenedor de informacion*/
+.creative_text{
+	color: #050000; /*Color del texto*/
+	font-size: 22pt;
+	text-align: center;	
+	border-bottom: 1px solid #000; /*Grosor y color de la linea*/
+	width: 46%;
+    margin: 0 auto;
+    text-align: center;
+	font-weight: bold;
+
+}
+
+.service_text{
+	color: #ffffff;
+	font-size: 22pt;
+	text-align: center;	
+	border-bottom: 1px solid rgb(255, 255, 255);
+	width: 22%;
+    margin: 0 auto;
+	font-weight: bold;
+}
+
+/***************************Seccion de los comentatios*******************/
+/************Colores Usados*************/
+:root{
+    --Texto: hsl(0, 0%, 100%);
+    --body-bg-color: hsl(200, 54%, 12%);
+    --glass: hsla(0, 0%, 64%, 0.677);
+    --fondo: rgba(168, 47, 47, 0.481);
+    --Borde-linea: hsl(0, 0%, 48%);
+    --blur: blur(10px);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--Texto);
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+/*Contenedor "Box" posicion, margenes,etc*/
+.form-main{
+    padding: 3%;
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-content{
+    width: 100%;
+    max-width: 450px;
+    position: center;
+    z-index: 0.8;
+}
+/*visual dentro de la caja apartir del border*/
+.form-content .box{
+    border-color: var(--glass);
+    border: 2px solid var(--Borde-linea);
+    padding: 40px 50px;
+    border-radius: 20px;
+    backdrop-filter: var(--blur);
+    margin-bottom: 10%;
+}
+
+.form-content .box{
+    padding: 30px 10px;
+    border-radius: 10px;
+    backdrop-filter: var(--blur)
+}
+
+.form-content h3{
+    font-size: 15px;
+    text-align: center;
+    margin-left: -45%;
+    line-height: 0;
+    margin-top: -20px;
+    color: var(--Texto);
+    font-weight: 500;
+}
+/*Texgto del titulo de la Publicacion*/
+.form-content h4{
+    font-size: 30px;
+    text-align: center;
+    line-height: 1.7;
+    color: var(--Texto);
+    font-weight: 500;
+    border-bottom: 2px solid #ffffff; /*Grosor y color de la linea*/
+}
+/*Texto de la publicacion(Descripcion)*/
+.form-content h5{
+    font-size: 17px;
+    text-align: left;
+    line-height: 3;
+    color: var(--Texto);
+    font-weight: 500;
+}
+.form-content form{
+    margin: 25px 0 20px;
+}
+
+.form-content .input-box{
+    margin: 25px
+}
+
+.form-content ::placeholder{
+    color: inherit;
+    opacity: 25px;
+}
+
+.form-content .input-control{
+    display: block;
+    height: 45px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid var(--Borde-linea);
+    color: inherit;
+    font-weight: inherit;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+.form-content .input-control:focus{
+    outline: none;
+}
+
+.form-content .input-link{
+    margin-top: 5%;
+    text-align: right;
+}
+
+.form-content .btn{
+	margin-top: 10%;
+    height: 50px;
+    width: 20%;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-family: inherit;
+    cursor: pointer;
+    border-radius: 25px;
+    user-select: none;
+    background: var(--Boton1);
+    border: none;
+    color: var(--Texto);
+    position: relative;
+    overflow: hidden;
+}
+.form-content .btn.btn1{
+	margin-top: 10%;
+    height: 50px;
+    width: 20%;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-family: inherit;
+    cursor: pointer;
+    border-radius: 25px;
+    user-select: none;
+    background: var(--Boton2);
+    border: none;
+    color: var(--Texto);
+    position: relative;
+    overflow: hidden;
+}
+
+/**************************** Fin seccion de las cajas de comentarios******************************/
+
+/*Seccion del pie de pagina*/
+.quote_section{
+	width: 100%;
+	float: left;
+    border: none;
+	height: auto;
+	padding: 50px;
+	font-weight: bold;
+}
+
+.quote_text{
+	color: #ffffff;
+	width: 100%;
+	float: left;
+}
+
+.loan_text{
+	color: #ffffff;
+	width: 100%;
+	float: left;
+	margin: 0px;
+
+}
+
+.input_main{
+	width: 100%;
+	float: left;
+    padding: 40px 20px;
+}
+
+/** arrow css **/
+
+#main_slider a.carousel-control-prev {
+    position: absolute;
+    left: 82px;
+    bottom: 10px;
+    top: inherit;
+}
+
+#main_slider a.carousel-control-prev {
+    position: absolute;
+    top: 40% !important;
+    left: 17px !important;
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+}
+#main_slider .carousel-control-prev, #main_slider .carousel-control-next {
+    width: 62px;
+    height: 60px;
+    background: #fffdfd;
+    opacity: 1;
+    font-size: 30px;
+    color: #000;
+}
+
+#main_slider .carousel-control-prev, #main_slider .carousel-control-next {
+    width: 62px;
+    height: 60px;
+    background: #fffdfd;
+    opacity: 1;
+    font-size: 30px;
+    color: #000;
+    border-radius: 35px;
+    top: 40% !important;
+}
+
+table {
+    margin: 0 auto; /* Centra la tabla en la página */
+    border-collapse: separate; /* Agrega espacio entre las celdas */
+    border-spacing: 10px; /* Controla el espacio entre las celdas */
+}
