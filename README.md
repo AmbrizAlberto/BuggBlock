@@ -1,5 +1,4 @@
-# BuggBlock
-## Proyecto Escolar
+# BuggBlock | Proyecto Escolar
 
 Blog Web con tematica enfocado a informacion sobre la tecnologia donde se hacer nuevas publicaciones de texto con imagenes.
 
